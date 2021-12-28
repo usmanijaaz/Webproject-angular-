@@ -1,0 +1,368 @@
+<div class="container-fluid"  [ngStyle]="{ backgroundColor: '#fff0e5' }">
+<div class="container ">
+  <app-navbar></app-navbar>
+<app-share-post></app-share-post>
+  <!-- {{ course.title1 }} -->
+  <div class="row">
+    <div class="col-xl-3 d-none d-xl-block">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-lg-12 col-xl-9">
+      <div [ngClass]="'btn-catalog d-xl-none'" id="outer-div13">
+        <div id="inner-div13">
+          <button [ngClass]="'btn-catalog'" [ngStyle]="{ border: 'none' }">
+            <b>Catalog Menu →</b>
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <!-- <app-div-image-s [course]="course[3]"></app-div-image-s> -->
+        <h3 [ngStyle]="{ marginTop: '20px' }">Most Popular</h3>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <!-- {{course[0].title}} -->
+          <!-- <app-div-image-s [course]="course[3]"></app-div-image-s> -->
+          <!-- {j_job[1]}
+   -->
+          <!-- {j_job[2]} -->
+
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i > 0 && i <= 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i < 1">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[0]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 1">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[2]}
+  
+                {j_job[1]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 1">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+
+          <!-- {j_job[1]}
+  
+                {j_job[2]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <!-- {j_job[0]} -->
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i < 1">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+
+            <div *ngIf="i == 1">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[2]}
+  
+                {j_job[1]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 1">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+
+          <!-- {j_job[1]}
+  
+                {j_job[2]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 0">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[0]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+
+            <div *ngIf="i == 1">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+
+          <!-- {j_job[2]}
+  
+                {j_job[1]} -->
+        </div>
+      </div>
+      <h3 [ngStyle]="{ marginTop: '20px' }">New + Noteworthy</h3>
+      <div class="div-mid1">
+        <div class="row div-mid">
+          <div class="col div-mid-color">
+            <h3>Pro Student</h3>
+            <br />
+            <h1>Students can join Pro for 35% less</h1>
+          </div>
+          <div class="col div-mid-color">
+            <br />
+            <p>
+              With new Codecademy Pro Student memberships, eligible college
+              students can get all the benefits of Pro for more than 35% off the
+              regular price. Study, practice, and apply the coding skills you
+              need to develop your own future.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- {j_job1[0]} -->
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+
+          <!-- {j_job[2]} -->
+
+          <!-- {j_job[2]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+
+          <!-- {j_job[2]} -->
+
+          <!-- {j_job[2]} -->
+        </div>
+        <div class="col-xs-12 col-md-6 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 2">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+
+          <!-- {j_job[2]} -->
+
+          <!-- {j_job[2]} -->
+        </div>
+      </div>
+      <h3 [ngStyle]="{ marginTop: '20px' }">Get Inspired</h3>
+      <div class="row">
+        <div class="col-xs-4 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 4">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 6">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 7">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[4]}
+                {j_job[6]}
+                {j_job[7]} -->
+        </div>
+        <div class="col-xs-8 col-lg-8">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 5">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 8">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[5]}
+                {j_job[8]} -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 9">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[9]} -->
+        </div>
+        <div class="col-xs-4 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 10">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[10]} -->
+        </div>
+        <div class="col-xs-4 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 11">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[11]} -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-8 col-lg-8">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 5">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 8">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[5]}
+                {j_job[8]} -->
+        </div>
+        <div class="col-xs-4 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 4">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 6">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 7">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[4]}
+                {j_job[6]}
+                {j_job[7]} -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-lg-4">
+          <div *ngFor="let course of courses; let i = index">
+            <div *ngIf="i == 11">
+              <!-- <app-base-component [course]="course"></app-base-component> -->
+              <app-div-image-s [course]="course"></app-div-image-s>
+            </div>
+          </div>
+          <!-- {j_job[11]} -->
+        </div>
+      </div>
+      <div [ngStyle]="{ textAlign: 'center', margin: '30px' }">
+        <button
+          [ngStyle]="{
+            backgroundColor: '#fff0e5',
+            color: 'blue',
+            padding: '8px',
+            border: 'blue solid 2px',
+            borderRadius: '5px'
+          }"
+        >
+          <b> See Full Catalog </b>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<app-googlemap></app-googlemap>
+<app-adsense></app-adsense>
+</div>

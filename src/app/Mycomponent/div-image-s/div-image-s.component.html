@@ -1,0 +1,41 @@
+<div id="{{ course.outterClass }}">
+  <div id="{{ course.middleClass }}">
+    <div id="{{ course.innerClass }}">
+      <div>
+        <a href="/">
+          <img
+            [ngStyle]="{ width: '100%' }"
+            src="{{ course.imageUrl1 }}"
+            alt=""
+          />
+        </a>
+
+        <span [ngStyle]="{ display: 'block' }">{{ course.title }}</span>
+
+        <span>
+          <strong>{{ course.subTitle }}</strong>
+          <span [ngStyle]="{ color: 'blue', cursor: 'pointer' }">
+            {{ course.title1 }}
+          </span>
+        </span>
+
+        <h3 id="h4-color">{{ course.mainDescription }}</h3>
+        <h5 id="h4-color" [ngStyle]="{ cursor: 'pointer' }">
+          {{ course.description1 }}
+        </h5>
+
+        <span>{{ course.description }}</span>
+      </div>
+      <div [ngStyle]="{ textAlign: 'center' }">
+        <img
+          [ngStyle]="{
+            marginTop: '20px',
+            width: '100px'
+          }"
+          src="{{ course.imageUrl }}"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</div>
